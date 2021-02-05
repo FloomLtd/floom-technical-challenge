@@ -27,9 +27,9 @@ For the purposes of keeping the exercise simple, we have assumed that there is o
 
 
 ## Brief
-We have a **Product List** page that shows a list of products associated with a florist.
+We need a **Product List** page that shows a list of products associated with a florist.
 
-We also have a **Product Detail** page that lists the flowers associated with a specific product
+We also need a **Product Detail** page that lists the flowers associated with a specific product
 
 ### Overall Task
 
@@ -92,6 +92,10 @@ These are only for reference - you do not need to implement these high fidelity 
 `npm install` will pull packages required to supply local mock api enpoints
 
 `npm run apis` will run the local mock apis
+
+We have a **Product List** api endpoint that provides a list of products.
+
+We also have a **Product Detail** api endpoint provides a list the flowers associated with a specific product
 
 
 ## Deliverables
