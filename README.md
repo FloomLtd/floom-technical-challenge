@@ -1,5 +1,5 @@
 # Floom Technical Exercise
-Great to hear that you’re looking to get involved with Floom. Create a new private Github repo, push your solution and add us as a collaborator when you're ready. Add github handles, `ahnunn`, `bradlocking`, `richieteo` as collaborators.
+Great to hear that you’re looking to get involved with Floom. Create a new private Github repo, push your solution and add us as a collaborator when you're ready. Add github handles, `ahnunn`, `richieteo` as collaborators.
 
 ## Background Info
 At Floom, we have a B2B (florist facing) product and a B2C (consumer facing) product. This exercise deals with understanding your approach to making some changes to our B2B product.
@@ -93,13 +93,16 @@ These are only for reference - you do not need to implement these high fidelity 
 
 `npm run apis` will run the local mock apis
 
-We have a **Product List** api endpoint that provides a list of products.
+`cd frontend && npm install && npm run start` will pull packages required to build the frontend project and run it in dev mode
 
-We also have a **Product Detail** api endpoint provides a list the flowers associated with a specific product
+`cd backend && npm install && npm run start`  will pull packages required to build the backend project and run it in dev mode
 
+We have provided a **Product List** api endpoint that provides a list of products.
 
 ## Deliverables
 - Constraints - Use React, Node, Typescript and an SQL database of your choice.
 - Beyond that you're open to use any frameworks you wish. We'll discuss your choices in our follow up meeting.
+- We have provided boiler-plating for the Frontend project as well as for the Api endpoints and data-models you are free to continue from these or roll your own base project structure.
 - We don't wish for you to spend longer than two hours on this task. If you haven't time to complete all elements of the task that's fine, we can talk about them more in person.
+- We will be evaluating primarily on the strength the implementation directly connected to the tasks listed, as opposed to rigging and boiler plating.
 - When we look at your solution we will be mainly looking at your approach to understanding the task, code structure, code style, how you handle styling, your design awareness, how you handle logic and data. So be sure to show these factors in your solution.
