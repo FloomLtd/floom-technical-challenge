@@ -1,7 +1,7 @@
 # Floom Technical Exercise
 Great to hear that you’re looking to get involved with Floom. Create a new private Github repo, push your solution and add us as a collaborator when you're ready. Add github handles, `ahnunn`, `richieteo` as collaborators.
 
-## Background Info
+## Brief
 At Floom, we have a B2B (florist facing) product and a B2C (consumer facing) product. This exercise deals with understanding your approach to making some changes to our B2B product.
 
 Some terminology:
@@ -24,15 +24,6 @@ For the purposes of keeping the exercise simple, we have assumed that there is o
 |  |  | Ranunculus | Red | 3 |
 | | True Love | Rose | Red | 10 |
 
-
-
-## Brief
-We need a **Product List** page that shows a list of products associated with a florist.
-
-We also need a **Product Detail** page that lists the flowers associated with a specific product
-
-### Overall Task
-
 We have teamed up with 2 **wholesale sellers** and aim to display relevant **wholesale items** that they sell to our florist partners.
 
 In order to do this, we need to be able to store and display additional **flower attributes** which define the specific type of flower being sold.
@@ -40,7 +31,6 @@ In order to do this, we need to be able to store and display additional **flower
 - Maturity = how long before the flower completely blooms (e.g. 2 days, 3 days)
 
 For the purposes of keeping the exercise simple, we have assumed there are only 2 wholesale sellers, 3 cultivar and 2 maturity values
-
 
 | Name of Wholesaler | Wholesale Item Cultivar | Wholesale Item Maturity |
 | --- | --- | --- |
@@ -53,13 +43,18 @@ For the purposes of keeping the exercise simple, we have assumed there are only 
 
 Mapping Table Flower to Cultivar
 
-
 | Flower | Cultivar |
 | --- | --- |
 | Red Rose | Red Rose Naomi |
 | | Red Rose Avalanche |
 | Red Ranunculus | Ran su Firenze |
 
+
+### Overall Task
+
+We need a **Product List** page that shows a list of products associated with a florist.
+
+We also need a **Product Detail** page that lists the flowers associated with a specific product
 
 
 ### Subtask 1 (data model design)
@@ -69,7 +64,11 @@ Whatever approach you take, it needs to be extensible to support additional attr
 
 
 ### Subtask 2 (backend + frontend)
-Implement a service that queries the wholesale sellers for products they have available and show these to the florist for purchase.
+Implement a service that executes the following:
+- Queries all of the wholesale sellers API's for any product data they have available,
+- Store this data in the Data model you have designed
+- Make this unified data available for querying by the frontend
+
 You have the freedom to decide where you want to show the items being sold. For example, you can show it on the product detail page beside the current Flowers that compose the product.
 
 ### Bonus Items (implement only 1 of 2)
@@ -89,7 +88,7 @@ These are only for reference - you do not need to implement these high fidelity 
 
 ## Data + Endpoints
 
-`npm install` will pull packages required to supply local mock api enpoints
+`npm install` will pull packages required to supply local mock api endpoints
 
 `npm run apis` will run the local mock apis
 
